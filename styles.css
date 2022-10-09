@@ -258,7 +258,7 @@ main{
     margin: 0 auto;
     margin-top: 15px;
     padding: 8px;
-    background-color: var(--soft-orange);
+    background-color: var(--bitcoin-orange);
     border-radius: 8px;
 }
 .currency-table--date p{
