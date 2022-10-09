@@ -254,16 +254,16 @@ main{
 .currency-table--date
 {
     width: 205px;
-    height: 35px;
+    height: 30px;
     margin: 0 auto;
     margin-top: 15px;
     padding: 8px;
-    background-color: var(--secondary-blue);
+    background-color: var(--soft-orange);
     border-radius: 8px;
 }
 .currency-table--date p{
-    margin: auto;
+    margin: auto 0;
     font-size: 1.2rem;
-    line-height: 1.5rem;
+    line-height: 1.4rem;
     color: var(--warm-black)
 }
