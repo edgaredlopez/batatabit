@@ -122,6 +122,7 @@ main{
     padding-top:80px;
     padding-bottom: 30px;
     text-align: center;
+    
 }
 .main-exchange-container .backgroundimg
 {
@@ -158,16 +159,33 @@ main{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*---------------------- Tablas ------------------*/
-.main-currency-table
+
+
+
+.main-currency-table , .main-comisiones-table
 {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
-    height: 360;
+    height: 360px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
+    position: relative;
 }
+
 
 .main-currency-table .main-currency-table__title
 {
@@ -176,10 +194,17 @@ main{
     font-weight: bold;
     line-height:2.3rem;
     color: var(--bitcoin-orange);
-
+}
+.main-comisiones-table  .main-comisiones-table__title
+{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height:2.3rem;
+    color: var(--secondary-blue);
 }
 
-.main-currency-table__container
+.main-currency-table__container, .main-comisiones-table__container
 {
     width:90%;
     min-width: 230px;
@@ -187,12 +212,13 @@ main{
     height: 250px;
     margin: 0 auto;
 }
-.main-currency-table__container table
+.main-currency-table__container table, .main-comisiones-table__container table
 {
     width:100%;
     height: 100%;
 }
-.main-currency-table__container td{
+.main-currency-table__container td, .main-comisiones-table__container td
+{
     width: 50%;
     font-size: 1.6rem;
     font-weight: 500;
@@ -202,19 +228,19 @@ main{
 }
 
 /*Redondeo de esquinas*/
-.main-currency-table__container--top-left
+.main-currency-table__container--top-left, .main-comisiones-table__container--top-left
 {
     border-radius: 15px 0 0 0;
 }
-.main-currency-table__container--top-right
+.main-currency-table__container--top-right, .main-comisiones-table__container--top-right
 {
     border-radius: 0 15px 0 0;
 }
-.main-currency-table__container--buttom-left
+.main-currency-table__container--buttom-left, .main-comisiones-table__container--buttom-left
 {
     border-radius: 0 0 0 15px;
 }
-.main-currency-table__container--bottom-right 
+.main-currency-table__container--bottom-right, .main-comisiones-table__container--bottom-right
 {
     border-radius: 0 0 15px 0;
 }
@@ -251,17 +277,20 @@ main{
     background-size: cover;
     background-position: center; 
 }
-.currency-table--date
+
+/*---------------------- Fecha de actualizacion ------------------*/
+.currency-table--date, .comisiones-table--date
 {
     width: 215px;
-    height: auto;
+    height: 30px;
     margin: 0 auto;
     margin-top: 15px;
     padding: 8px;
-    background-color: var(--bitcoin-orange);
+    background-color: var(--soft-orange);
     border-radius: 8px;
 }
-.currency-table--date p{
+.currency-table--date p, .comisiones-table--date p
+{
     margin: auto 0;
     font-size: 1.2rem;
     line-height: 1.4rem;
