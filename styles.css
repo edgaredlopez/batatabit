@@ -234,7 +234,7 @@ main{
     width: 15px;
     height: 15px;
     margin-left: 10px;
-    background-image: url('/assets/icons/trending-down.svg');
+    background-image: url('./assets/icons/trending-down.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -246,7 +246,7 @@ main{
     width: 15px;
     height: 15px;
     margin-left: 10px;
-    background-image: url('/assets/icons/trending-up.svg');
+    background-image: url('./assets/icons/trending-up.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -258,7 +258,7 @@ main{
     margin: 0 auto;
     margin-top: 15px;
     padding: 8px;
-    background-color: var(--soft-orange);
+    background-color: var(--secondary-blue);
     border-radius: 8px;
 }
 .currency-table--date p{
