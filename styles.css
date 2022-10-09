@@ -253,8 +253,8 @@ main{
 }
 .currency-table--date
 {
-    width: 205px;
-    height: 30px;
+    width: 210px;
+    height: auto;
     margin: 0 auto;
     margin-top: 15px;
     padding: 8px;
