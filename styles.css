@@ -181,8 +181,8 @@ main{
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-    padding: 0px 25px;
-    gap: 10px;
+    padding: 0px 45px;
+    gap: 30px;
 }
 
 .main-currency-table , .main-comisiones-table
