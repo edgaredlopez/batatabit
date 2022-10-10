@@ -522,7 +522,7 @@ main{
     position: relative;
     scroll-snap-align: center;
     width: 70%;
-    min-width: 230px; /*No puede ser mas pequeno que 230px para no danar la organizacion, y NO PUSIMOS 320px PORQUE CUANDO LLEGUEMOS AUN TAMANO DE 320px DE ANCHO DE VENTANA, LA TARJETA OCUPARIA TODO LA PANTALLA Y QUEREMOS QUE ESTA SE VEA MAS PEQUENA QUE LA PANTALLA*/
+    min-width: 190px; /*No puede ser mas pequeno que 230px para no danar la organizacion, y NO PUSIMOS 320px PORQUE CUANDO LLEGUEMOS AUN TAMANO DE 320px DE ANCHO DE VENTANA, LA TARJETA OCUPARIA TODO LA PANTALLA Y QUEREMOS QUE ESTA SE VEA MAS PEQUENA QUE LA PANTALLA*/
     max-width: 300px; /*Para evitar que se agrande mucho en dispositivos desktop*/
     height: 250px;
     margin: 50px auto 0px;
@@ -638,3 +638,37 @@ main{
     background-image: url('./assets/icons/morado-right-arrow.svg');
 }
 
+
+/*Diseno de FOOOTER*/
+footer
+{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+
+}
+footer section
+{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul
+{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left li
+{
+    margin:10px 0px;
+}
+.left a
+{
+    text-decoration: none;
+    color: var(--just-white);
+}
