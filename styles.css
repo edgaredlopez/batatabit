@@ -13,6 +13,7 @@
     --bitcoin-orange: #f7931a;
     --soft-orange: #ffe9d5;
     --secondary-blue: #1a9af7;
+    --primary-morado: #6a0190;
     --soft-blue: #e7f5ff;
     --warm-black: #282623;
     --black: #201e1c;
@@ -485,10 +486,26 @@ main{
 
 /*Estilos de las card*/
 /*No se crean estilos para el contenedor section de las card porque solo hay una y no es necesario*/
+.mainPlanesContainer__containerSlider
+{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+
 
 .containerSlider__card
 {
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 230px; /*No puede ser mas pequeno que 230px para no danar la organizacion, y NO PUSIMOS 320px PORQUE CUANDO LLEGUEMOS AUN TAMANO DE 320px DE ANCHO DE VENTANA, LA TARJETA OCUPARIA TODO LA PANTALLA Y QUEREMOS QUE ESTA SE VEA MAS PEQUENA QUE LA PANTALLA*/
     max-width: 300px; /*Para evitar que se agrande mucho en dispositivos desktop*/
@@ -509,10 +526,19 @@ main{
     left: 50%; /*Posicionamos en el centro*/
     transform: translateX(-50%); /*Trasladamos el objeto en el eje x restando el 50% del elemento, trasladamos el objeto a la medida de su mitad*/
     font-size: 1.2rem;
+    font-weight: 500;
     background-color: var(--bitcoin-orange);
     border-radius: 15px;
     color: var(--just-white);
     box-shadow: 0px 4px 8px rgba(89,73,30,0.6);
+}
+.containerSlider__card .tituloBasico
+{
+    background-color: var(--secondary-blue);
+}
+.containerSlider__card .tituloPremium
+{
+    background-color: var(--primary-morado);
 }
 
 .card__planInfoContainer--title
@@ -526,21 +552,22 @@ main{
 .card__planInfoContainer--price
 {
     padding:5px 0px;
-    position: relative;
+   /* position: relative;*/
     font-size: 5.2rem;
     font-weight: bold;
-    line-height: 6.3rem;
+    line-height: 4rem;
     color: var(--black);
 }
 
 .card__planInfoContainer--price span
 {
-    position: absolute;
+    /*position: absolute;*/
     top: 17px;
     left: calc(50% - 40px); /*Calculamos la mitad del elemento y le restamos 10px para que quede centrado*/
     font-size: 1.2rem;
     font-weight: 300;
-    line-height: 1.4rem; 
+    line-height: 1.5rem; 
+    vertical-align: top;
 }
 .card__planInfoContainer--descripcion
 {
@@ -577,3 +604,22 @@ main{
     background-position: center;
     vertical-align: middle;
 }
+
+.botonMensual
+{
+    border: 2px solid var(--secondary-blue);
+}
+.card__planInfoContainer .iconoBlueMensual
+{
+    background-image: url('./assets/icons/blue-right-arrow.svg');
+}
+
+.botonQuinquenal
+{
+    border: 2px solid var(--primary-morado);
+}
+.card__planInfoContainer .iconoMoradoQuinquenal
+{
+    background-image: url('./assets/icons/morado-right-arrow.svg');
+}
+
