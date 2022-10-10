@@ -703,3 +703,36 @@ footer .containerBatata .left ul
     font-weight: 500;
 
 }
+
+
+
+
+
+
+
+
+
+
+/*Responsive design*/
+@media only screen and (max-width:950px)
+{
+    .main-tables-container,.mainPlanesContainer__containerSlider
+    {
+    overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width:564px)
+{
+    .main-tables-container
+    {
+    overflow-x: scroll;
+    }
+}
+@media only screen and (max-width:635px)
+{
+    .mainPlanesContainer__containerSlider
+    {
+    overflow-x: scroll;
+    }
+}
