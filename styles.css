@@ -174,10 +174,20 @@ main{
 
 /*---------------------- Tablas ------------------*/
 
-
+.main-tables-container
+{
+    display: flex;
+    height: 370px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding: 0px 25px;
+    gap: 10px;
+}
 
 .main-currency-table , .main-comisiones-table
 {
+    scroll-snap-align: center;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
@@ -226,6 +236,7 @@ main{
     line-height:1.9rem;
     color: var(--grey);
     background-color: var(--just-white);
+    border: 1px solid #ebebeb;
 }
 
 /*Redondeo de esquinas*/
@@ -283,27 +294,31 @@ main{
 .currency-table--date
 {
     width: 215px;
-    height: auto;
+    height: 40px;
     margin: 0 auto;
     margin-top: 15px;
     padding: 8px;
     background-color: var(--soft-orange);
     border-radius: 8px;
+    vertical-align: middle;
 }
 .comisiones-table--date
 {
     width: 215px;
-    height: auto;
+    height: 40px;
     margin: 0 auto;
     margin-top: 15px;
     padding: 8px;
     background-color: var(--soft-blue);
     border-radius: 8px;
+    vertical-align: middle;
 }
 
 .currency-table--date p, .comisiones-table--date p
 {
     margin: auto 0;
+    vertical-align: middle;
+    padding-top: 6px;
     font-size: 1.2rem;
     line-height: 1.4rem;
     color: var(--warm-black)
