@@ -1,0 +1,19 @@
+.productCardsContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+.main-tables-container,.mainPlanesContainer__containerSlider
+{
+    overflow-x: hidden;
+}
+
+
+.mainPlanesContainer__containerSlider
+{
+    justify-content: center;
+}
