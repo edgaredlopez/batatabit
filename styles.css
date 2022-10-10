@@ -177,7 +177,7 @@ main{
 .main-tables-container
 {
     display: flex;
-    height: 370px;
+    min-height: 380px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
@@ -335,7 +335,7 @@ main{
     width: 100%;
     min-width: 320px;
     height: auto;
-    padding: 20px 10px; /*Para no preocuparnos despues dor el espacio entre el margen y cada card*/
+    padding: 20px 10px 50px 10px; /*Para no preocuparnos despues dor el espacio entre el margen y cada card*/
     background-color: var(--black);
 }
 .mainProductDetail__batataLogo
@@ -504,7 +504,7 @@ main{
 .mainPlanesContainer__containerSlider
 {
     display: flex;
-    height: 316px;
+    min-height: 365px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
@@ -640,15 +640,17 @@ main{
 
 
 /*Diseno de FOOOTER*/
-footer
+footer .containerBatata
 {
     display: flex;
     width: 100%;
+    min-width: 320px;
     height: 150px;
     background-color: var(--bitcoin-orange);
+    padding: 0px 20px;
 
 }
-footer section
+footer .containerBatata section
 {
     display: flex;
     width: 50%;
@@ -656,7 +658,7 @@ footer section
     justify-content: center;
     align-items: center;
 }
-footer .left ul
+footer .containerBatata .left ul
 {
     font-size: 1.4rem;
     font-weight: 500;
@@ -671,4 +673,33 @@ footer .left ul
 {
     text-decoration: none;
     color: var(--just-white);
+}
+.edbyte
+{
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    height: 40px;
+    padding: 0px 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--just-white);
+}
+.edbyte__logo
+{
+    width: 37px;
+    height: 30px;
+    background-image: url('./assets/img/edbyte.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+}
+  
+.edbyte p
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+
 }
