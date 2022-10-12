@@ -11,10 +11,10 @@
 {
     /*----------Colores----------*/
     --bitcoin-orange: #f7931a;
-    --soft-orange: #ffe9d5;
+    --soft-orange: #fbca9c;
     --secondary-blue: #1a9af7;
     --primary-morado: #6a0190;
-    --soft-blue: #e7f5ff;
+    --soft-blue: #a2d8ff;
     --warm-black: #282623;
     --black: #201e1c;
     --grey: #bababa;
@@ -181,8 +181,8 @@ main{
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-    padding: 0px 45px;
-    gap: 30px;
+    padding: 0px 20px;
+    gap: 10px;
 }
 
 .main-currency-table , .main-comisiones-table
@@ -234,9 +234,17 @@ main{
     font-size: 1.6rem;
     font-weight: 500;
     line-height:1.9rem;
-    color: var(--grey);
+    color: var(--warm-black);
     background-color: var(--just-white);
-    border: 1px solid #ebebeb;
+   
+}
+.main-currency-table__container td
+{
+    border: 1px solid  #ffc680  ;
+}
+.main-comisiones-table__container td
+{
+    border: 1px solid  #b3d4fc  ;
 }
 
 /*Redondeo de esquinas*/
@@ -256,12 +264,12 @@ main{
 {
     border-radius: 0 0 15px 0;
 }
-.main-currency-table__container .table__right
+.main-currency-table__container .table__right, .main-comisiones-table__container .table__right
 {
     font-size: 1.4rem;
     font-weight: normal;
     line-height: 1.7rem;
-    color: #757575;
+    color: #505050;
 }
 
 
@@ -537,15 +545,16 @@ main{
     width: 120px;
     height:31px;
     top: -16px;
-    padding: 8px;
+    padding: 6px;
     left: 50%; /*Posicionamos en el centro*/
     transform: translateX(-50%); /*Trasladamos el objeto en el eje x restando el 50% del elemento, trasladamos el objeto a la medida de su mitad*/
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: bold;
     background-color: var(--bitcoin-orange);
     border-radius: 15px;
     color: var(--just-white);
     box-shadow: 0px 4px 8px rgba(89,73,30,0.6);
+
 }
 .containerSlider__card .tituloBasico
 {
@@ -579,7 +588,7 @@ main{
     /*position: absolute;*/
     top: 17px;
     left: calc(50% - 40px); /*Calculamos la mitad del elemento y le restamos 10px para que quede centrado*/
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.5rem; 
     vertical-align: top;
@@ -716,9 +725,10 @@ footer .containerBatata .left ul
 /*Responsive design*/
 @media only screen and (max-width:950px)
 {
+    
     .main-tables-container,.mainPlanesContainer__containerSlider
     {
-    overflow-x: hidden;
+        overflow-x: hidden;
     }
 }
 
@@ -726,13 +736,13 @@ footer .containerBatata .left ul
 {
     .main-tables-container
     {
-    overflow-x: scroll;
+        overflow-x: scroll;
     }
 }
 @media only screen and (max-width:635px)
 {
     .mainPlanesContainer__containerSlider
     {
-    overflow-x: scroll;
+        overflow-x: scroll;
     }
 }
