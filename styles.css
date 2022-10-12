@@ -151,12 +151,12 @@ main{
     line-height: 2.6rem;
     color: var(--warm-black);
 }
-.main-exchange-container p{
+.main-exchange-container__title p{
     margin-bottom: 30px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.6rem;
-    color: #757575;
+    color: #656565;
 }
 
 
@@ -453,7 +453,7 @@ main{
     width: 100%;
     min-width: 320px;
     height: 50vh;
-    background-image: url('./assets/img/bitcoinbaby2x.jpg');
+    background-image: url('./assets/img/bitcoinbaby.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -31,3 +31,13 @@
 {
     width: 35%;
 }
+
+.bitcoingImgContainer
+{
+    
+    background-image: url('../assets/img/bitcoinbaby2x.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
